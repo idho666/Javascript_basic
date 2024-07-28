@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      <!-- tipedata string -->
+      document.writeln("Hello Paduka Nijar.js \n");
+      document.writeln(100);
+
+      document.writeln("\n kudanil");
+
+      const data = {
+        nama: "paijan bin sumanto",
+        umur: 29,
+        cita_cita: ["proplayer ml", "pemain sepak bola", "dewa judi"],
+        penampilan: {
+          wajaj: "manis",
+          tinggi_badan: 19,
+        },
+      };
+
+      console.info("Rudolf Santoso");
+
+      console.info(data.nama);
+
+      console.info("========================\n");
+
+      data.cita_cita.forEach((cita_cita) => {
+        console.log(cita_cita);
+      });
+
+      console.log(data.penampilan.wajaj);
+
+      console.log("=========this is ternary=========");
+      let array_list_barang = ["baju", "lemari", "kursi"];
+
+      let pilihIndex = 1;
+
+      const barangTerpilih =
+        pilihIndex === 1 ? array_list_barang[0] : array_list_barang[1];
+
+      console.log(barangTerpilih);
+
+      console.log("=========Math Operation=========");
+
+      console.log(Math.random() * 10);
+
+      console.log(
+        "Math absolut -> allways given positive number " + Math.abs(-99)
+      );
+
+      console.log("Math round " + Math.round(5.9));
+
+      console.log("Math ceil " + Math.ceil(5.9));
+
+      console.log("Math floor " + Math.floor(5.9));
+
+      let firstNumber = "1";
+      let secondNumber = 1;
+
+      console.log(parseInt(firstNumber) + secondNumber);
+
+      console.log("=========Function=========");
+      function hitung(param1, Param2) {
+        console.log(param1 + Param2);
+      }
+
+      hitung(secondNumber, secondNumber);
+
+      function hitung2(param1, Param2) {
+        return param1 + Param2;
+      }
+
+      console.log(hitung2(7, 9));
+
+      console.log("=========variable Function=========");
+
+      let matHitung = hitung;
+
+      console.log(matHitung(8, 11));
+
+      console.log("=========Anonomous Function=========");
+
+      let book = function (name) {
+        document.writeln(`<br/> book name : ${name}`);
+
+        return name;
+      };
+
+      console.log(book("Driving Honda"));
+
+      function product(name) {
+        name("Kulkas");
+      }
+
+      product(function (name) {
+        document.writeln(`<br/> Nama Product : ${name}`);
+      });
+
+      console.log("=========Nested Function=========");
+
+      function Prosentase(modal, totalPemasukan) {
+        function untung() {
+          return totalPemasukan - modal;
+        }
+
+        let prosentaseUntung = (untung() / modal) * 100;
+        console.log(`Posentase Untung : ${prosentaseUntung}%`);
+      }
+
+      Prosentase(100000, 250000);
+
+      console.log("=========Arrow Function=========");
+
+      let sayHello = (name) => console.log(`Hello ${name}`);
+
+      sayHello("Babby Anna");
+
+      console.log("=========Looping Js=========");
+
+      for (a = 0; a < 10; a++) {
+        document.writeln(`<br/> Count a : ${a}`);
+      }
+      console.log("=========Map Js=========");
+
+      let map = new Map();
+
+      map.set("nama", "umar");
+      map.set("umur", 19);
+
+      console.log(map.get("nama"));
+      console.log(map.size);
+      map.clear();
+      console.log(map.size);
+    </script>
+  </body>
+</html>
